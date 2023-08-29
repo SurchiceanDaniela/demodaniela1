@@ -28,10 +28,56 @@ form button {
     background-color: #333;
     color: #ffff;
     border: none;
-    cursor: pointer,
+    cursor: pointer;
+    position: relative;
 }
 
-.Snorlax img {
-    width: 90%;
-    height: auto;
+.fullscreen-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.fullscreen-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-section {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100%;
+    position: relative;
+}
+
+section {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label, form input, form button {
+    display: block; 
+    margin: 10px 0;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
 }
