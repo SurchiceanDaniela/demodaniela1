@@ -21,6 +21,10 @@ section {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
+    width: 150px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
 }
 
 form button {
@@ -80,4 +84,8 @@ footer {
     margin-top: 10px;
     background-color: #333;
     color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
