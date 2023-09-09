@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset = "utf-8">
+<html>
+<head>
+    <title> Pagina di esempio di uno script HTML</title>
+</head>
+
+<body>
+    <h1 id="header da cambiare"> CLICCA SUL PULSANTE PER CAMBIARE IL TESTO</h1>
+    <p id="testoDaCambiare">Questo è il testo originale</p>
+
+    <button onclick="cambiaTesto()">Cambia Testo</button> 
+    <button onclick="faiComparireScritta()">Fai comparire una scritta magica!</button>
+
+    <div id="aggiungimi"> </div>
+    
+    <script>
+        function cambiaTesto(){
+            const elemento = document.getElementById("testoDaCambiare")
+            const elementoHeader = document.getElementById("header da cambiare")
+            elemento.innerHTML = "IL TESTO ORA E' QUESTO!!!!!!"
+            const coloreCausuale = '#' + Math.floor(Math.random()*16777215).toString(16)
+            const coloreCausuale2 = '#' + Math.floor(Math.random()*16777215).toString(16)
+            elemento.style.color = coloreCausuale
+            elementoHeader.style.color = coloreCausuale2
+        }
+
+        function faiComparireScritta(){
+            const elemento = document.getElementById("aggiungimi")
+            elemento.innerHTML = "ECCO LA SCRITTA MAGICA"
+        }
+    </script>
+</body> 
+</html>
