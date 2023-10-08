@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display:flex; /* imposta il contenitore come flessibile*/
+    flex-wrap: wrap; /* Specifica che gli elementi flessibili possono andare a capo se non c'è spazio */
+    justify-content: space-between; /* Allinea gli elementi flessibili in modo che siano equidistanti l'uno dall'altro */
+    align-items: flex-start; /* Allinea gli elementi in alto sull'asse verticale in modo che inizino tutti dalla parte superiore.*/
+    max-width: 1000px; /* definisce una massima larghezza per il contenitore */
+    margin: 0 auto; /* centra il contenitore */
+    padding: 20px; /* aggiunge un padding al contenitore */
+}
+
+header, nav, main, aside {
+    flex: 1; /* distribuisce lo spazio disponibile in modo uniforme tra gli elementi e gli elementi flessibili */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd; /* aggiunge un bordo grigio chiaro, solid = bordo solido */
+    border-radius: 5px; /* arrotonda gli angoli del bordo */
+}
+
+nav ul, aside ul {
+    list-style: none; /* rimuove i puntini dalle liste */
+    padding: 0
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* cambia la direzione del contenitore da orizzontale a verticale */
+    }
+    header, nav, main, aside {
+        margin: 10px 0; /* aggiunge un margine sopra e sotto */
+    }
+}
+

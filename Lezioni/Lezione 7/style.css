@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* avvolgo le immagini su nuove righe */
+    justify-content: center; /* allineo le immagini al centro */
+    max-width: 1000px;
+    margin: 0 auto; /* centra il contenitore */
+}
+
+.image {
+    flex: 1; /* distribuisce lo spazio disponibile in modo uniforme tra gli elementi e gli elementi flessibili */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* nasconde il contenuto che eccede i bordi */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
